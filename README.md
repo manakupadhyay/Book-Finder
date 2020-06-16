@@ -1,7 +1,7 @@
 # Book Finder :books::mag:
 
 An application made with ExpressJS, that allow users to enter the name of a book and displays some basic information about it. It uses Google Books API.
-Basically the main motive behind building this \*mini-project\* was to get familiar with APIs. I learnt how to make API calls, handling data 
+Basically, the main motive behind building this \*mini-project\* was to get familiar with APIs. I learnt how to make API calls, handling data 
 that is received as a response, manipulating received data, etc.
 
 
