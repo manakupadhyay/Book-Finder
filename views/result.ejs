@@ -1,0 +1,71 @@
+<%- include('header') -%>
+
+<div class="container text-center mt-3">
+
+  <a href="/" style="text-decoration:none; color:inherit"><h3 class="display-4" style="font-family: 'Permanent Marker', cursive;">Book Finder</h3></a>
+  <form action="/search" class="form text-center" method="get">
+    <div class="form-group">
+    <input type="text" class="form-control" name="name" value="<%-search%>" autocomplete="off" placeholder="Search a Book" style="border-radius:3rem;width:50%;margin:auto auto; border-width:.01rem;border-color: black;"/>
+    </div>
+    <div class="form-group">
+    <button type="submit" class=" btn btn-outline-dark  mt-1" style="border-radius:50px">Search <i class="fas fa-search"></i></button>
+    </div>
+  </form>
+
+</div>
+
+  <div class="container text-center my-3">
+  <% for(let i=0;i<data.length;i++){ %>
+      <div class="row my-3">
+        <div class="col-md-4">
+          <div class="card" > <a href="<%-data[i].previewlink%>" target="_blank" style="text-decoration:none" >
+            <div class="card-header text-dark bg-transparent"><%=data[i].title%></div>
+            <img class="card-img-top img-fluid img-thumbnail" src="<%-data[i].imageLinks === undefined?"" :data[i].imageLinks.thumbnail%>" alt="Card image cap" style="width:230px;height:230px">
+            <div class="card-body">
+              <h5 class="card-title text-dark"><span style="font-size:1rem">Author: </span><%= data[i].authors %></h5>
+              <p class="card-text text-dark"><span style="font-size:1rem">Category: </span><%= data[i].categories %></p>
+            </div>
+              </a>
+            <div class="card-footer">
+              <small class="text-muted">Publisher: <%= data[i].publisher %></small>
+            </div>
+          </div>
+        </div>
+        <% i++ %>
+        <% if(i>=data.length) break; %>
+        <div class="col-md-4">
+          <div class="card">  <a href="<%-data[i].previewlink%>" target="_blank" style="text-decoration:none">
+            <div class="card-header bg-transparent text-dark"><%=data[i].title%></div>
+            <img class="card-img-top img-fluid img-thumbnail" src="<%-data[i].imageLinks === undefined? "":data[i].imageLinks.thumbnail%>" alt="Card image cap" style="width:230px;height:230px">
+            <div class="card-body">
+              <h5 class="card-title text-dark"><span style="font-size:1rem">Author: </span><%= data[i].authors %></h5>
+              <p class="card-text text-dark"><span style="font-size:1rem">Category: </span><%= data[i].categories %></p>
+
+            </div>
+            </a>
+            <div class="card-footer">
+              <small class="text-muted">Publisher: <%= data[i].publisher %></small>
+            </div>
+          </div>
+        </div>
+          <% i++ %>
+          <% if(i>=data.length) break; %>
+        <div class="col-md-4">
+          <div class="card"> <a href="<%-data[i].previewlink%>" target="_blank" style="text-decoration:none">
+            <div class="card-header bg-transparent text-dark"><%=data[i].title%></div>
+            <img class="card-img-top img-fluid img-thumbnail" src="<%-data[i].imageLinks === undefined? "":data[i].imageLinks.thumbnail%>" alt="Card image cap" style="width:230px;height:230px">
+            <div class="card-body">
+              <h5 class="card-title text-dark"><span style="font-size:1rem">Author: </span> <%= data[i].authors %></h5>
+              <p class="card-text text-dark"><span style="font-size:1rem">Category: </span><%= data[i].categories %></p>
+
+            </div>
+            </a>
+            <div class="card-footer">
+              <small class="text-muted">Publisher: <%= data[i].publisher %></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% } %>
+  </div>
+<%- include('footer') -%>

@@ -1,0 +1,20 @@
+<%- include('header') -%>
+
+<div class="text-center bg">
+
+
+  <div class="centered">
+
+  <h3 class="display-4" style="font-family: 'Permanent Marker', cursive;"><a href="/" style="text-decoration:none; color:inherit">Book Finder </a></h3>
+    <form action="/search" class="form" method="get">
+      <div class="form-group">
+      <input type="text" class="form-control" name="name" autocomplete="off" placeholder="Search a Book" style="border-radius:50px;  border-width:.01rem;border-color: black;"/>
+      </div>
+      <div class="form-group">
+      <button type="submit" class="btn-outline-dark btn mt-1" style="border-radius:50px">Search <i class="fas fa-search"></i></button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include('footer') -%>

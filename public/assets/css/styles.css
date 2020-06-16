@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Permanent+Marker&display=swap');
+
+body, html {
+  height: 100%;
+}
+div{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.bg {
+  /* background: url("/assets/images/books.jpg"); */
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: rgb(0, 0, 0); */
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* color: #f1f1f1; */
+  width: 50%;
+  border-radius: 25px;
+}
+
+.form{
+  padding: 20px 40px;
+}
+input{
+  text-align: center;
+}
+button{
+  cursor: pointer;
+}
+.footer{
+  height: 3.5rem;
+}
