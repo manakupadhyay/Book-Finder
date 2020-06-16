@@ -5,13 +5,13 @@ An application made with ExpressJS, that allow users to enter the name of a book
 
 ## Built With
 
-* [Express](http://expressjs.com/) - The web framework used
-* [Google Books API](https://developers.google.com/books/docs/v1/using) - Dependency Management
+* [Express](http://expressjs.com/) - Framework
+* [Google Books API](https://developers.google.com/books/docs/v1/using) - API
 
 
 ## Authors
 
-* **Manak Upadhyay** - *Initial work* - [PurpleBooth](https://github.com/manakupadhyay)
+* **Manak Upadhyay** - [Manak Upadhyay](https://github.com/manakupadhyay)
 
 
 ## License
@@ -21,5 +21,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 * Stack Overflow
-* Inspiration
+* Bootstrap 4
 
